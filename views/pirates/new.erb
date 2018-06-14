@@ -1,3 +1,12 @@
 <h1>Make your form here</h1>
-<form>
+<form action="/pirates" method="post">
+  <label <% if !list.blank? %>
+    <% for item in  %>
+
+    <% end %>
+  <% else %>
+
+  <% end %>
+
+  <p><input type="text" name="pirate[name]" id="pirate_name"></p>
 </form>
